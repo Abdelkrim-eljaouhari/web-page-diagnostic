@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1400px) {
+  nav ul.nav-list li:not(:last-child) {
+    margin-right: 49px;
+  }
+  nav ul.nav-list li span {
+    right: -28px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header .header-section {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  header .header-logo-wrapper {
+    margin-bottom: 15px;
+  }
+  ul.header-icon-list li {
+    font-size: 14px;
+  }
+  nav ul.nav-list li:not(:last-child) {
+    margin-right: 20px;
+  }
+  nav ul.nav-list li span {
+    right: -12px;
+  }
+  section.reception {
+    height: auto;
+  }
+  .reception-photo {
+    float: none;
+  }
+  .reception-icons-container {
+    justify-content: center;
+  }
+  div.reception-icons {
+    margin: 20px 0px;
+  }
+  .diagnostic-article {
+    height: auto;
+    padding: 10px 0px;
+  }
+  .diagnostic-wrapper {
+    padding: 0;
+    height: auto;
+  }
+  .diagnostic-wrapper h2 {
+    font-size: 24px;
+  }
+  footer {
+    height: auto;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  footer p {
+    display: block;
+    font-size: 14px;
+    line-height: initial;
+  }
+  footer img {
+    float: none;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  nav {
+    display: none;
+  }
+  header .header-section {
+    border: none;
+  }
+  .carousel-inner-box p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  ul.header-icon-list li:not(:last-child) {
+    margin-right: 10px;
+  }
+  div.contact-us {
+    margin: 0px auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  ul.header-icon-list li {
+    font-size: 9px;
+  }
+  header .header-logo-wrapper {
+    width: 296px;
+    height: 44px;
+    background-position: center;
+    background-size: cover;
+  }
+  div.contact-us {
+    width: 129px;
+    height: 31px;
+  }
+  .carousel-inner-box p {
+    font-size: 16px;
+  }
+}

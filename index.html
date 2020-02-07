@@ -12,12 +12,13 @@
     />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>diagnostics-haut-marnais</title>
   </head>
   <body>
-    <div class="container">
-      <!-- header -->
-      <header>
+    <!-- header -->
+    <header>
+      <div class="container">
         <section class="header-section">
           <div class="header-logo-wrapper"></div>
           <ul class="header-icon-list">
@@ -62,10 +63,10 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
 
-    <!-- section carousel -->
+    <!-- section hero carousel -->
     <section class="hero-carousel">
       <div
         id="carouselExampleControls"
@@ -104,7 +105,6 @@
           <span class="prev-icon" aria-hidden="true">
             <img src="./images/prev-icon.png" alt="prev icon" />
           </span>
-          <span class="sr-only">Previous</span>
         </a>
         <a
           class="carousel-control-next"
@@ -115,7 +115,6 @@
           <span class="next-icon" aria-hidden="true">
             <img src="./images/next-icon.png" alt="next icon"
           /></span>
-          <span class="sr-only">Next</span>
         </a>
       </div>
       <div class="carousel-inner-box text-center">
@@ -131,6 +130,7 @@
         </div>
       </div>
     </section>
+    <!-- section reception -->
     <section class="reception">
       <div class="container">
         <h2 class="text-center">Titre de la page d’acceuil</h2>
@@ -165,21 +165,21 @@
               vigore, discessit.
             </p>
           </div>
-          <div class="col-lg-6 right-img">
+          <div class="col-lg-6 col-xl-6 right-img">
             <div class="reception-photo">
               <img src="./images/reception-photo.png" alt="reception photo" />
             </div>
           </div>
         </div>
         <div class="row reception-icons-container">
-          <div class="col-lg-3 reception-icons">
+          <div class="col-lg-3 col-xl-3 reception-icons">
             <img src="./images/phone.svg" alt="phone icon" />
             <div>
               <h3>Benoît LAVOCAT au :</h3>
               <p class="phone-number">07 81 36 97 67</p>
             </div>
           </div>
-          <div class="col-lg-3 reception-icons">
+          <div class="col-lg-3 col-xl-3 reception-icons">
             <img src="./images/icon-position.svg" alt="location icon" />
             <div>
               <h3>22, Avenue des Etats Unis</h3>
@@ -193,7 +193,7 @@
               <p>08h - 19h</p>
             </div>
           </div>
-          <div class="col-lg-3 reception-icons">
+          <div class="col-lg-3 col-xl-3 reception-icons">
             <img src="./images/icon-urgency.svg" alt="urgency icon" />
             <div>
               <h3>En d'urgence, possibilité</h3>
@@ -203,7 +203,292 @@
         </div>
       </div>
     </section>
-    <section class="prestation"></section>
+    <!-- section prestation -->
+    <section class="prestation">
+      <div class="container">
+        <h2>Nos prestations</h2>
+        <img
+          class="reception-circle prestation-circle"
+          src="./images/prestation-circle.png"
+          alt="reception circle"
+        />
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-most-inner-container">
+                <div class="prestation-box">
+                  <div class="prestation-content">
+                    <h4>
+                      Les obligations <br />
+                      avant la vente
+                    </h4>
+                    <img src="./images/prestation-circle-one.png" alt="" />
+                    <p>
+                      Retrouvez toutes vos obligations avant la signature du
+                      compromis de vente de votre bien immobilier.
+                    </p>
+                    <span class="right-arrow">
+                      <img src="./images/right-arrow.png" alt="right arrow" />
+                    </span>
+                  </div>
+                </div>
+                <div class="prestation-box">
+                  <img class="move-up" src="./images/pic2.png" alt="" />
+                </div>
+                <div class="prestation-box">
+                  <img class="move-up" src="./images/pic3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-most-inner-container">
+                <div class="prestation-box">
+                  <div class="prestation-content">
+                    <h4>
+                      Les obligations <br />
+                      avant la vente
+                    </h4>
+                    <img src="./images/prestation-circle-one.png" alt="" />
+                    <p>
+                      Retrouvez toutes vos obligations avant la signature du
+                      compromis de vente de votre bien immobilier.
+                      <span class="right-arrow">
+                        <img src="./images/right-arrow.png" alt="right arrow" />
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prestation-box">
+                  <img class="move-up" src="./images/pic2.png" alt="" />
+                </div>
+                <div class="prestation-box">
+                  <img class="move-up" src="./images/pic3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-most-inner-container">
+                <div class="prestation-box">
+                  <div class="prestation-content">
+                    <h4>
+                      Les obligations <br />
+                      avant la vente
+                    </h4>
+                    <img
+                      src="./images/prestation-circle-one.png"
+                      alt="circle one "
+                    />
+                    <p>
+                      Retrouvez toutes vos obligations avant la signature du
+                      compromis de vente de votre bien immobilier.
+                      <span class="right-arrow">
+                        <img src="./images/right-arrow.png" alt="right arrow" />
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prestation-box">
+                  <img class="move-up" src="./images/pic2.png" alt="" />
+                </div>
+                <div class="prestation-box">
+                  <img class="move-up" src="./images/pic3.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span aria-hidden="true"
+              ><img class="move-up" src="./images/prev-icon.png" alt="prev icon"
+            /></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span aria-hidden="true"
+              ><img class="move-up" src="./images/next-icon.png" alt="next icon"
+            /></span>
+          </a>
+        </div>
+        <!-- prestation footer -->
+      </div>
+    </section>
+    <!-- sectoion companies -->
+    <section class="companies">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Assurance et certification</h2>
+            <img
+              class="circle-companies"
+              src="./images/circle-companies.png"
+              alt="circle companies"
+            />
+            <div class="row companies-container">
+              <div class="col-lg-6 col-md-6">
+                <img src="./images/company1.png" alt="company1" />
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <img src="./images/company2.png" alt="company2" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>Fédérations</h2>
+            <img
+              class="circle-companies"
+              src="./images/circle-companies.png"
+              alt="circle companies"
+            />
+            <div class="row companies-container">
+              <div class="col-lg-6 col-md-6">
+                <img src="./images/company3.png" alt="company3" />
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <img src="./images/company4.png" alt="company4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- article diagnostic -->
+    <article class="diagnostic-article">
+      <div class="diagnostic-wrapper">
+        <div class="container">
+          <h2>Diagnostic immobilier proche de Chaumont</h2>
+          <img
+            class="diagnostic-circle"
+            src="./images/diagnostic-circle.png"
+            alt="diagnostic article"
+          />
+          <p>
+            Diagnostic immobilier Chaumont - DPE Chaumont - Amiante avant
+            travaux Chaumont - Assainissement Chaumont - Diagnostic immobilier
+            Châtillon-sur-Seine - DPE Châtillon-sur-Seine - Amiante avant
+            travaux Châtillon-sur-Seine - Assainissement Châtillon-sur-Seine -
+            Diagnostic immobilier Bourbonne-les-Bains - DPE Bourbonne-les-Bains
+            - Assainissement Bourbonne-les-Bains - Diagnostic immobilier Nogent
+            - DPE Nogent - Amiante avant travaux Nogent - Assainissement Nogent
+            - Diagnostic immobilier Val-de-Meuse - DPE Val-de-Meuse - Amiante
+            avant travaux Val-de-Meuse - Assainissement Val-de-Meuse - DPE
+            Châteauvillain - Amiante avant travaux Châteauvillain -
+            Assainissement Châteauvillain - Diagnostic immobilier Châteauvillain
+            - DPE Rolampont - Amiante avant travaux Rolampont - Assainissement
+            Rolampont - Diagnostic immobilier Rolampont - DPE Langres - Amiante
+            avant travaux Langres - Assainissement Langres - Diagnostic
+            immobilier Langres - DPE Chalindrey - Amiante avant travaux
+            Chalindrey - Assainissement Chalindrey - Diagnostic immobilier
+            Chalindrey - Diagnostic immobilier Colombey-les-Deux-Églises - DPE
+            Colombey-les-Deux-Églises - Amiante avant travaux
+            Colombey-les-Deux-Églises - Assainissement Colombey-les-Deux-Églises
+            - Diagnostic immobilier Bologne - DPE Bologne - Amiante avant
+            travaux Bologne - Assainissement Bologne - Diagnostic immobilier
+            Neuilly-l'Évêque - DPE Neuilly-l'Évêque - Amiante avant travaux
+            Neuilly-l'Évêque - Assainissement Neuilly-l'Évêque
+          </p>
+          <img
+            class="diagnostic-border"
+            src="./images/left-diagnostic-border.png"
+            alt="left border icon"
+          />
+          <img
+            class="diagnostic-border"
+            src="./images/right-diagnostic-border.png"
+            right="right border icon"
+          />
+        </div>
+      </div>
+    </article>
+    <!-- article diagnostic end -->
+    <!-- section infos -->
+    <section class="infos">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="./images/infos-logo.png" alt="infos logo" />
+            <br />
+            <img
+              class="info-circle"
+              src="./images/infos-circle.png"
+              alt="infos circle"
+            /><br />
+            Votre diagnostiqueur immobilier sur Chaumont et ses alentours pour
+            la vente ou la location de votre bien. Nous réalisons également tous
+            les diagnostics pour les copropriétés.
+          </div>
+          <div class="col-lg-4">
+            <h2>Services en ligne</h2>
+            <img
+              class="info-circle"
+              src="./images/infos2-circle.png"
+              alt="infos circle"
+            /><br />
+            <ul class="infos-first-list">
+              <li><span></span>Actualités</li>
+              <li><span></span>Paiement en ligne</li>
+              <li><span></span>Promotions</li>
+              <li><span></span>Générateur étiquette</li>
+              <li><span></span>Témoignages clients</li>
+              <li><span></span>Demande de devis</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h2>Contactez-nous</h2>
+            <img
+              class="info-circle"
+              src="./images/infos-circle.png"
+              alt="infos circle"
+            /><br />
+            <ul class="infos-second-list">
+              <li>
+                <img src="./images/info-icon1.svg" alt="infos icon" /> 22,
+                Avenue des Etats Unis 52000 Chaumont
+              </li>
+              <li>
+                <img src="./images/info-icon2.svg" alt="infos icon" />
+                contact@diagnosticshautmarnais.fr
+              </li>
+              <li>
+                <img src="./images/info-icon3.svg" alt="infos icon" /> 07 81 36
+                97 67
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section infos -->
+    <footer>
+      <div class="container">
+        <p>
+          ©DIAGNOSTICS HAUT MARNAIS - RCS : 815 227 145 - Diagnostic immobilier
+          - Mentions légales - Conception web : <a href="#">www.arobiz.com</a>
+        </p>
+        <img src="./images/arobiz.png" alt="arobiz" />
+      </div>
+      <!-- footer -->
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
