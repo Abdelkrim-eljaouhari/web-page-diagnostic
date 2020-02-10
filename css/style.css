@@ -34,7 +34,8 @@ section.hero-carousel,
 .prestation-content,
 section.prestation,
 footer img,
-.diagnostic-wrapper {
+.diagnostic-wrapper,
+.prestation-box {
   position: relative;
 }
 
@@ -43,7 +44,8 @@ header .header-logo-wrapper,
 section.reception,
 section.prestation,
 section.companies,
-.diagnostic-article {
+.diagnostic-article,
+.prestation-box {
   background-size: cover;
   background-position: center;
 }
@@ -251,14 +253,29 @@ div.reception-icons {
   transition: all 0.3s linear;
   margin-top: 70px;
 }
+div.reception-icons svg {
+  margin-bottom: 10px;
+}
+.second-reception-icon {
+  display: none;
+}
+
 div.reception-icons:hover {
   background-color: #60bb48;
   transform: scale(1.1);
   color: white;
   z-index: 10;
 }
-div.reception-icons img {
-  margin-bottom: 25px;
+
+div.reception-icons:hover .second-reception-icon {
+  display: block;
+  margin: 0 auto 10px;
+}
+div.reception-icons:hover .first-reception-icon {
+  display: none;
+}
+div.reception-icons:hover svg path {
+  fill: #fff;
 }
 div.reception-icons .phone-number {
   font-size: 24px;
@@ -295,16 +312,30 @@ section.prestation .carousel-most-inner-container {
 
 .prestation-box {
   border: 2px solid #fff;
+  height: 302px;
+  width: 372px;
 }
 .prestation-box:first-child {
-  width: 370px;
-  height: 302px;
+  background-image: url('../images/pic2.png');
 }
+.prestation-box:nth-child(2) {
+  background-image: url('../images/pic3.png');
+}
+.prestation-box:last-child {
+  background-image: url('../images/pic2.png');
+}
+
 .prestation-content {
   background-color: white;
+  width: 100%;
   height: 100%;
   text-align: left;
   padding: 52px;
+  transform: translate(-100%, 100%);
+  transition: all 0.5s linear;
+}
+.prestation-box:hover .prestation-content {
+  transform: translate(0%, 0%);
 }
 .prestation-content h4 {
   color: #7cc56a;
@@ -326,7 +357,7 @@ section.prestation .carousel-most-inner-container {
   line-height: 40px;
   text-align: center;
   border: 2px solid #fff;
-  bottom: -20px;
+  bottom: -3px;
   left: 40px;
 }
 .prestation-box img {
