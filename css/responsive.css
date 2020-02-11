@@ -117,6 +117,7 @@
   .prestation-box {
     height: 157px;
     width: 205px;
+    margin: 0;
   }
   nav {
     display: none;
@@ -124,7 +125,7 @@
   header .header-section {
     border: none;
   }
-  .carousel-inner-box p {
+  .carousel-inner-box h1 {
     font-size: 30px;
   }
 }
@@ -144,8 +145,8 @@
   .prestation-content p {
     display: none;
   }
-  .reception .container {
-    padding: 0px 30px;
+  .container {
+    padding: 0px 40px;
   }
   .infos-logo {
     width: 236px;
@@ -167,7 +168,16 @@
     width: 129px;
     height: 31px;
   }
-  .carousel-inner-box p {
+  .carousel-inner-box h1 {
     font-size: 16px;
+  }
+  .diagnostic-wrapper {
+    width: 335px;
+  }
+  .diagnostic-wrapper img {
+    width: 33px;
+  }
+  .go-up {
+    right: 80px;
   }
 }

@@ -4,6 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .row {
   padding: 0;
 }
@@ -53,6 +56,13 @@ section.companies,
 /* ======== */
 
 /* ==== header ==== */
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 40;
+}
+
 header .header-section {
   justify-content: space-between;
   padding: 22px 0px;
@@ -183,10 +193,10 @@ span.next-icon {
   vertical-align: middle;
 }
 
-.points:first-child {
+.points:nth-child(1) {
   margin-right: 23px;
 }
-.points:last-child {
+.points:nth-child(3) {
   margin-left: 23px;
 }
 div.contact-us {
@@ -327,6 +337,7 @@ section.prestation .carousel-most-inner-container {
   border: 2px solid #fff;
   height: 302px;
   width: 372px;
+  margin-bottom: 20px;
 }
 .prestation-box:first-child {
   background-image: url('../images/pic2.png');
@@ -344,10 +355,14 @@ section.prestation .carousel-most-inner-container {
   height: 100%;
   text-align: left;
   padding: 52px;
-  transform: translate(-100%, 100%);
+  transform: translate(-101%, 100%);
   transition: all 0.5s linear;
+  position: relative;
+  opacity: 0;
 }
+
 .prestation-box:hover .prestation-content {
+  opacity: 1;
   transform: translate(0%, 0%);
 }
 .prestation-content h4 {
@@ -370,8 +385,8 @@ section.prestation .carousel-most-inner-container {
   line-height: 40px;
   text-align: center;
   border: 2px solid #fff;
-  bottom: -3px;
-  left: 40px;
+  bottom: -19px;
+  left: 44px;
 }
 .prestation-box img {
   transition: all 0.6s linear;
@@ -462,6 +477,33 @@ footer p {
 footer img {
   top: 31px;
   float: right;
+}
+/* Go up button */
+.go-up {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  background-color: #dc3545;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 10px;
+  animation: go-up 0.8s linear 0.3s infinite alternate;
+  display: none;
+  outline: none;
+  z-index: 50;
+}
+.go-up img {
+  transform: rotate(90deg);
+  width: 19px;
+}
+@keyframes go-up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* === Overriding bootstrap style ===*/
 .carousel-indicators li {
