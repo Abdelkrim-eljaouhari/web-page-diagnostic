@@ -49,7 +49,8 @@ section.reception,
 section.prestation,
 section.companies,
 .diagnostic-article,
-.prestation-box {
+.prestation-box,
+section.copropriete {
   background-size: cover;
   background-position: center;
 }
@@ -220,6 +221,9 @@ div.contact-us button {
 div.contact-us button:hover {
   transform: translate(3px, -4px);
 }
+.carousel-inner-box h2 {
+  font-size: 40px;
+}
 
 /* ==== Section reception ==== */
 section.reception {
@@ -273,9 +277,6 @@ div.reception-icons {
 div.reception-icons svg {
   margin-bottom: 10px;
 }
-.second-reception-icon {
-  display: none;
-}
 
 div.reception-icons:hover {
   background-color: #60bb48;
@@ -287,6 +288,9 @@ div.reception-icons:hover {
 div.reception-icons:hover .second-reception-icon {
   display: block;
   margin: 0 auto 10px;
+}
+.second-reception-icon {
+  display: none;
 }
 div.reception-icons:hover .first-reception-icon {
   display: none;
@@ -382,7 +386,7 @@ section.prestation .carousel-most-inner-container {
   display: inline-block;
   background-color: #60bb48;
   border-radius: 50%;
-  line-height: 40px;
+  line-height: 37px;
   text-align: center;
   border: 2px solid #fff;
   bottom: -19px;
@@ -483,7 +487,7 @@ footer img {
   position: fixed;
   bottom: 35px;
   right: 20px;
-  background-color: #dc3545;
+  background-color: #60bb48;
   height: 60px;
   width: 60px;
   border: none;
@@ -505,6 +509,70 @@ footer img {
     opacity: 1;
   }
 }
+/* ============ copropriete page============== */
+/*=== Section copropriete === */
+section.copropriete {
+  background-image: url('../images/copropriete.png');
+  height: 225px;
+}
+/* === Section location === */
+section.location {
+  padding: 50px 0px 90px;
+}
+.location-box {
+  border: 4px solid #c2d8e9;
+}
+.location-box .building-image {
+  width: 100%;
+  transition: all 0.3s linear;
+}
+.location-box:hover .building-image,
+.location-box:hover .location-content {
+  transform: translate(11px, -12px);
+}
+.location .building-content {
+  position: relative;
+  top: 35px;
+}
+.circle-titre {
+  margin: 20px auto;
+  display: block;
+}
+.location-content {
+  padding: 40px 20px;
+  height: 100%;
+  background-color: #f5f8f9;
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+.location-content > img:nth-child(2),
+.location-content > img:nth-child(5) {
+  display: none;
+}
+.location-content:hover > img:nth-child(1),
+.location-content:hover > img:nth-child(4) {
+  display: none;
+}
+.location-content:hover > img:nth-child(2),
+.location-content:hover > img:nth-child(5) {
+  display: block;
+}
+
+.location-content:hover {
+  background-color: #60bb48;
+  color: white;
+}
+.location-content .right-arrow {
+  line-height: 30px;
+}
+.location-gallery .row {
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.location-gallery .location-box {
+  padding: 0;
+}
+
 /* === Overriding bootstrap style ===*/
 .carousel-indicators li {
   height: 10px;
