@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/jpg" href="./images/test.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>diagnostics-haut-marnais</title>
+  </head>
+  <body >
+    
+    <!-- header -->
+    <header id="header"  >
+      <div class="container">
+        <section class="header-section">
+          <h1><a class="header-logo-wrapper" href="./index.html"></a></h1>
+
+          <ul class="header-icon-list">
+            <li>
+              <span><img src="./images/phone-icon.svg" alt="phone icon"/></span>
+              <span
+                ><p>Benoît LAVOCAT</p>
+                <p><a href="tel:+212781369767">07 81 36 97 67</a></p></span
+              >
+            </li>
+            <li>
+              <span><img src="./images/time-icon.svg" alt="time icon"/></span>
+              <span
+                ><p>Lundi au vendredi</p>
+                <p>08h00 - 19h00</p></span
+              >
+            </li>
+            <li>
+              <span
+                ><img src="./images/client-icon.svg" alt="space client icon"
+              /></span>
+              <span><a href="#">Espace client</a></span>
+            </li>
+          </ul>
+        </section>
+        <nav>
+          <ul class="nav-list text-uppercase font-weight-bold">
+            <li><a href="#">Accueil</a> <span></span></li>
+            <li><a href="#">VENTE</a><span></span></li>
+            <li><a href="#">LOCATION</a><span></span></li>
+            <li class="active-link">
+              <a href="./copropriete.html">Copropriété</a><span></span>
+              <ul class="nav-list_nested">
+                <li><a href="#">DTG</a></li>
+                <li><a href="#">DTA</a></li>
+                <li><a href="#">CREP</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Avant travaux</a><span></span></li>
+            <li><a href="#">Autres prestations</a><span></span></li>
+            <li><a href="#">Demande de devis</a><span></span></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- section hero carousel -->
+    <section class="hero-carousel contact">  
+      <div class="carousel-inner-box text-center">
+        <h2>
+          <span class="points"></span><span> Contact</span> 
+          <span class="points"></span> </br>
+        </h2>   
+      </div>
+    </section>
+    <!-- section reception -->
+    <section class="form">
+      <div class="container">
+        <div class="row">
+            <div class="col-xl-5 form-left">
+                <h2>Contacter-nous</h2>
+                <img src="./images/prestation-circle-one.png" alt="circle one">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+                        <image id="Calque_15" data-name="Calque 15" width="76" height="76" xlink:href="data:img/png;base64,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"/>
+                      </svg>
+                    
+                      <p>22 , Avenue des Etats Unis
+                        52000 Chaumont</p>
+                        
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" viewBox="0 0 25 22">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #fff;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Shape_1_copie_2" data-name="Shape 1 copie 2" class="cls-1" d="M1276.98,3242.31a0.5,0.5,0,0,0-.02-0.12,0.626,0.626,0,0,0-.25-0.33l-3.58-2.35V3237a0.624,0.624,0,0,0-.64-0.6h-4.12l-3.5-2.3a0.687,0.687,0,0,0-.73,0l-3.53,2.3h-4.1a0.624,0.624,0,0,0-.64.6v2.48l-3.59,2.35a0.575,0.575,0,0,0-.28.48v0.01l0.02,13.08a0.569,0.569,0,0,0,.19.42,0.627,0.627,0,0,0,.45.18h0l23.7-.03a0.624,0.624,0,0,0,.64-0.6Zm-3.85-1.33,2.04,1.34-2.04,1.34v-2.68Zm-8.63-5.65,1.63,1.07h-3.27Zm-7.35,2.28h14.7v6.89l-4.94,3.23-2.01-1.47h-0.01a0.661,0.661,0,0,0-.77,0l-2.03,1.48-4.94-3.21v-6.92Zm-1.28,3.34v2.74l-2.1-1.37Zm-2.59,2.52,7.75,5.05-7.73,5.65Zm1.25,11.32,9.98-7.29,9.94,7.27Zm13.44-6.28,7.73-5.06,0.02,10.72Zm0.86-8.49h-8.66a0.6,0.6,0,1,0,0,1.2h8.66A0.6,0.6,0,1,0,1268.83,3240.02Zm0,3.13h-8.66a0.606,0.606,0,1,0,0,1.21h8.66A0.606,0.606,0,1,0,1268.83,3243.15Z" transform="translate(-1252 -3234)"/>
+                      </svg>
+                      
+                    <p><img src="" alt=""><a href="mailto:contact@diagnosticshautmarnais.fr
+                        ">contact@diagnosticshautmarnais.fr
+                    </a>
+                    </p>
+                </div>
+               
+               <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #fff;
+                          fill-rule: evenodd;
+                        }
+                      </style>
+                    </defs>
+                    <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M552.473,1394.81a1.275,1.275,0,1,0,.372.9A1.3,1.3,0,0,0,552.473,1394.81Zm42.4,1.41-9.179-9.18a7.241,7.241,0,0,0-10.259,0l-3.2,3.2h0l-1.279,1.28-15.491-15.49,4.48-4.48a7.263,7.263,0,0,0,0-10.26l-9.171-9.17a7.26,7.26,0,0,0-10.259,0l-2.419,2.42a20.875,20.875,0,0,0,0,29.49l8.92,8.92a1.271,1.271,0,1,0,1.8-1.8l-8.92-8.92a18.337,18.337,0,0,1-1.571-24.11l9.642,9.64a1.268,1.268,0,0,0,1.8-1.79l-9.752-9.75,2.3-2.31a4.734,4.734,0,0,1,6.667,0l9.172,9.17a4.723,4.723,0,0,1,0,6.67l-5.379,5.38a1.273,1.273,0,0,0-.372.9,1.25,1.25,0,0,0,.372.89l17.288,17.29a1.262,1.262,0,0,0,1.8,0l1.279-1.28,15.739,15.74a18.329,18.329,0,0,1-24.113-1.57l-9.048-9.05a1.262,1.262,0,0,0-1.795,0,1.275,1.275,0,0,0,0,1.8l9.047,9.04a20.85,20.85,0,0,0,29.493,0l2.419-2.42A7.243,7.243,0,0,0,594.875,1396.22Zm-1.795,8.46-2.3,2.3-15.847-15.84,2.3-2.31a4.716,4.716,0,0,1,6.667,0l9.18,9.18A4.72,4.72,0,0,1,593.08,1404.68Zm-40.238-35.63a1.274,1.274,0,0,0-1.795,0,1.281,1.281,0,0,0-.372.9,1.27,1.27,0,1,0,2.539,0A1.277,1.277,0,0,0,552.842,1369.05Zm39.631,7.37a21.828,21.828,0,0,0-23.636-23.62,1.556,1.556,0,0,0,.275,3.1,18.7,18.7,0,0,1,20.259,20.24,1.565,1.565,0,0,0,.453,1.24,1.538,1.538,0,0,0,.966.45A1.556,1.556,0,0,0,592.473,1376.42Zm-10.711-12.92a15.583,15.583,0,0,0-12.371-4.51,1.556,1.556,0,0,0,.275,3.1,12.477,12.477,0,0,1,13.5,13.5,1.565,1.565,0,0,0,.453,1.24,1.586,1.586,0,0,0,.966.45,1.557,1.557,0,0,0,1.683-1.42A15.577,15.577,0,0,0,581.762,1363.5Zm-4.4,4.39a9.352,9.352,0,0,0-7.424-2.7,1.544,1.544,0,0,0-1.413,1.68,1.559,1.559,0,0,0,1.688,1.42,6.229,6.229,0,0,1,6.752,6.75,1.558,1.558,0,0,0,3.1.27A9.356,9.356,0,0,0,577.366,1367.89Z" transform="translate(-532 -1350)"/>
+                  </svg> 
+                <p><img src="" alt="">Benoît LAVOCAT au :<br/><a href="tel:+212781369767">
+                    07 81 36 97 67
+                    </a></p>
+               </div>
+                
+            </div>
+            <div class="col-xl-7 form-right">
+                <p class="form-message">Laissez-nous vos coordonnées , notre équipe vous contacte rapidement !</p>
+                <form >
+                    <div class="personal-infos">
+                        <input type="text" placeholder="Nom">
+                        <input type="text" placeholder="Société">
+                    </div>
+                    <div class="personal-infos">
+                        <input type="tel" placeholder="Téléphone">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <textarea placeholder="Message"></textarea>
+                    <div class="button"><button type="submit">Envoyer</button></div>
+                </form>
+            </div>
+        </div>
+        
+        
+
+      </div>
+
+    </section>
+    <!-- section map -->
+    <section id="map">
+        
+    </section>
+    <!-- article diagnostic -->
+    <article class="diagnostic-article">
+      <div class="diagnostic-wrapper">
+        <div class="container">
+          <h2>Diagnostic immobilier proche de Chaumont</h2>
+          <img
+            class="diagnostic-circle"
+            src="./images/diagnostic-circle.png"
+            alt="diagnostic article"
+          />
+          <p>
+            Diagnostic immobilier Chaumont - DPE Chaumont - Amiante avant
+            travaux Chaumont - Assainissement Chaumont - Diagnostic immobilier
+            Châtillon-sur-Seine - DPE Châtillon-sur-Seine - Amiante avant
+            travaux Châtillon-sur-Seine - Assainissement Châtillon-sur-Seine -
+            Diagnostic immobilier Bourbonne-les-Bains - DPE Bourbonne-les-Bains
+            - Assainissement Bourbonne-les-Bains - Diagnostic immobilier Nogent
+            - DPE Nogent - Amiante avant travaux Nogent - Assainissement Nogent
+            - Diagnostic immobilier Val-de-Meuse - DPE Val-de-Meuse - Amiante
+            avant travaux Val-de-Meuse - Assainissement Val-de-Meuse - DPE
+            Châteauvillain - Amiante avant travaux Châteauvillain -
+            Assainissement Châteauvillain - Diagnostic immobilier Châteauvillain
+            - DPE Rolampont - Amiante avant travaux Rolampont - Assainissement
+            Rolampont - Diagnostic immobilier Rolampont - DPE Langres - Amiante
+            avant travaux Langres - Assainissement Langres - Diagnostic
+            immobilier Langres - DPE Chalindrey - Amiante avant travaux
+            Chalindrey - Assainissement Chalindrey - Diagnostic immobilier
+            Chalindrey - Diagnostic immobilier Colombey-les-Deux-Églises - DPE
+            Colombey-les-Deux-Églises - Amiante avant travaux
+            Colombey-les-Deux-Églises - Assainissement Colombey-les-Deux-Églises
+            - Diagnostic immobilier Bologne - DPE Bologne - Amiante avant
+            travaux Bologne - Assainissement Bologne - Diagnostic immobilier
+            Neuilly-l'Évêque - DPE Neuilly-l'Évêque - Amiante avant travaux
+            Neuilly-l'Évêque - Assainissement Neuilly-l'Évêque
+          </p>
+          <img
+            class="diagnostic-border"
+            src="./images/left-diagnostic-border.png"
+            alt="left border icon"
+          />
+          <img
+            class="diagnostic-border"
+            src="./images/right-diagnostic-border.png"
+            right="right border icon"
+          />
+        </div>
+      </div>
+    </article>
+    <!-- article diagnostic end -->
+    <!-- section infos -->
+    <section class="infos">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="./index.html">
+              <img
+                class="infos-logo"
+                src="./images/infos-logo.png"
+                alt="infos logo"
+            /></a>
+            <br />
+            <img
+              class="info-circle"
+              src="./images/infos-circle.png"
+              alt="infos circle"
+            /><br />
+            Votre diagnostiqueur immobilier sur Chaumont et ses alentours pour
+            la vente ou la location de votre bien . Nous réalisons également
+            tous les diagnostics pour les copropriétés .
+          </div>
+          <div class="col-lg-4">
+            <h2>Services en ligne</h2>
+            <img
+              class="info-circle"
+              src="./images/infos2-circle.png"
+              alt="infos circle"
+            /><br />
+            <ul class="infos-first-list">
+              <li><span></span> <a href="#">Actualités</a></li>
+              <li><span></span> <a href="#">Paiement en ligne</a></li>
+              <li><span></span> <a href="#">Promotions</a></li>
+              <li><span></span> <a href="#">Générateur étiquette</a></li>
+              <li><span></span> <a href="#">Témoignages clients</a></li>
+              <li><span></span> <a href="#">Demande de devis</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h2>Contactez-nous</h2>
+            <img
+              class="info-circle"
+              src="./images/infos-circle.png"
+              alt="infos circle"
+            /><br />
+            <ul class="infos-second-list">
+              <li>
+                <img src="./images/info-icon1.svg" alt="infos icon" /> 22 ,
+                Avenue des Etats Unis 52000 Chaumont
+              </li>
+              <li>
+                <img src="./images/info-icon2.svg" alt="infos icon" />
+
+                <a href="mailto:contact@diagnosticshautmarnais.fr">
+                  contact@diagnosticshautmarnais.fr</a
+                >
+              </li>
+              <li>
+                <img src="./images/info-icon3.svg" alt="infos icon" /> <a href="tel:+2127 81 36
+                97 67">07 81 36
+                97 67</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section infos -->
+    <footer>
+      <div class="container">
+        <p>
+          ©DIAGNOSTICS HAUT MARNAIS - RCS : 815 227 145 - <a href="#">Diagnostic immobilier</a>
+          - <a href="#">Mentions légales</a> -  <a href="#">Conception web </a>: <a href="#">www.arobiz.com</a>
+        </p>
+        <a href="#"><img src="./images/arobiz.png" alt="arobiz" /></a>
+      </div>
+      <!-- footer -->
+    </footer>
+    <button  class="go-up"><a href="#header"><img src="./images/prev-icon.png" alt="go up icon"></a></button>
+    <script src="./js/index.js"></script>
+    <script>
+        var map;
+        var marker;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+          });
+    marker =  new google.maps.Marker({
+        position:{lat: -34.397, lng: 150.644},
+        map:map
+    })
+        }
+      </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7fu_I-0yD8pVwhhiAKS9wjsyz9GPMV8o&callback=initMap"
+    async defer></script>
+  </body>
+</html>
+<!-- AIzaSyD7fu_I-0yD8pVwhhiAKS9wjsyz9GPMV8o -->

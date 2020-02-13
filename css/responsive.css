@@ -21,6 +21,10 @@
   .location .building-content {
     position: static;
   }
+  /* === contact === */
+  .personal-infos input:first-child {
+    margin-right: 8px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -136,13 +140,15 @@
     border: none;
   }
   .carousel-inner-box h2,
-  .copropriete h1 {
+  .copropriete h2,
+  .contact h2 {
     font-size: 30px;
   }
-  /* === === */
+  /* === copropriete === */
   .building-content p:first-child {
     margin-top: 20px;
   }
+  /* === contact === */
 }
 @media only screen and (max-width: 770px) {
   ul.header-icon-list li:not(:last-child) {
@@ -153,6 +159,11 @@
   }
   div.reception-icons {
     width: 100%;
+  }
+  /* === contact === */
+  .personal-infos input {
+    width: 100%;
+    margin-right: 0px;
   }
 }
 
@@ -186,7 +197,8 @@
   .carousel-inner-box h2 {
     font-size: 16px;
   }
-  .copropriete h1 {
+  .copropriete h2,
+  .contact h2 {
     font-size: 23px;
   }
   .diagnostic-wrapper {
@@ -198,9 +210,14 @@
   .go-up {
     right: 40px;
   }
-  /* === === */
+  /* === copropriete === */
   .location h1,
   .location-gallery h2 {
     font-size: 24px;
+  }
+  /* === contact === */
+  .form .form-left {
+    font-size: 15px;
+    padding: 60px 13px;
   }
 }

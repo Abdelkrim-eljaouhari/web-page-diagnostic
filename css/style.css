@@ -50,9 +50,12 @@ section.prestation,
 section.companies,
 .diagnostic-article,
 .prestation-box,
-section.copropriete {
+section.copropriete,
+section.contact,
+.form .form-left {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 /* ======== */
 
@@ -572,13 +575,110 @@ section.location {
 .location-gallery .location-box {
   padding: 0;
 }
+/* ============ contact page ============== */
+section.contact {
+  background-image: url('../images/contact-bg.png');
+  height: 225px;
+}
+section.form {
+  padding: 55px 0px 70px;
+}
+.form .form-left {
+  background-image: url('../images/form-infos.png');
+  height: 550px;
+  font-size: 20px;
+  padding: 74px 64px;
+  color: white;
+}
+.form .form-left h2 {
+  margin-bottom: 15px;
+}
+.form .form-left svg {
+  height: 42px;
+  width: 42px;
+  margin-right: 20px;
+}
+.form .form-left div {
+  padding: 32px 0px;
+  display: flex;
+  align-items: center;
+}
+.form .form-left div:not(:last-child) {
+  border-bottom: 1px solid #9694a1;
+}
+.form .form-left div p {
+  margin: 0;
+}
+.form-right textarea {
+  width: 100%;
+  display: block;
+  height: 300px;
+  resize: none;
+}
+.personal-infos input {
+  width: 49%;
+}
+.form-right textarea,
+.personal-infos input {
+  background-color: #f5f8f9;
+  border: none;
+  padding: 19px;
+  margin-bottom: 10px;
+}
+.form-right textarea:focus,
+.personal-infos input:focus {
+  border: 1px solid #2a77b9;
+}
+.form-right .button {
+  display: inline-block;
+  border-left: 2px solid #c2d8e9;
+  border-bottom: 2px solid #c2d8e9;
+}
+.form-right button {
+  width: 200px;
+  height: 44px;
+  background-color: #00478f;
+  color: white;
+  transform: translate(2px, -3px);
+  border: none;
+}
+.form-right ::placeholder {
+  font-weight: 600;
+  color: black;
+  opacity: 1;
+}
+.form-right :-ms-input-placeholder {
+  font-weight: 600;
+  color: black;
+  opacity: 1;
+}
+.form-message {
+  font-weight: 500;
+}
 
+.personal-infos input:first-child {
+  margin-right: 10px;
+}
+/* map */
+#map {
+  height: 360px;
+  width: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 /* === Overriding bootstrap style ===*/
 .carousel-indicators li {
   height: 10px;
   width: 10px;
   border-radius: 50%;
 }
+
 .carousel {
   position: static;
 }
