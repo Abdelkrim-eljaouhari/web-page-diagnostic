@@ -102,6 +102,10 @@
   .location-gallery .row {
     margin: 0px;
   }
+  /* === contact === */
+  .warning-msg {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 990px) {
@@ -165,6 +169,14 @@
     width: 100%;
     margin-right: 0px;
   }
+  /*  === detail page==== */
+  .detail-box {
+    padding: 20px 15px;
+  }
+  .detail-img {
+    width: 365px;
+    height: 211px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -208,7 +220,7 @@
     width: 33px;
   }
   .go-up {
-    right: 40px;
+    right: 70px;
   }
   /* === copropriete === */
   .location h1,
@@ -219,5 +231,10 @@
   .form .form-left {
     font-size: 15px;
     padding: 60px 13px;
+  }
+  /* === detail === */
+  .detail-img {
+    width: 268px;
+    height: 171px;
   }
 }
